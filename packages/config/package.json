@@ -1,0 +1,30 @@
+{
+  "name": "@jaskang/config",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "jaskang",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.cjs",
+  "exports": {
+    ".": "./index.cjs",
+    "./prettier": "./prettierrc.cjs",
+    "./tsconfig": "./tsconfig.json",
+    "./tsconfigNode": "./tsconfig.node.json",
+    "./tsconfigWeb": "./tsconfig.web.json"
+  },
+  "files": [
+    "index.cjs",
+    "prettierrc.cjs",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "tsconfig.web.json"
+  ],
+  "scripts": {},
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}

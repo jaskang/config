@@ -1,0 +1,41 @@
+{
+  "name": "@jaskang/eslint-config",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "jaskang",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "exports": {},
+  "scripts": {},
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "vue-eslint-parser": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7.28.0",
+    "prettier": ">= 2.0.0",
+    "typescript": ">= 4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}

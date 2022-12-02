@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "0.0.1",
+  "description": "配置文件包",
+  "author": "jaskang",
+  "private": "true",
+  "scripts": {
+    "build": "echo \"no build\""
+  },
+  "devDependencies": {
+    "@types/node": "16",
+    "eslint": "^8.28.0",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}
