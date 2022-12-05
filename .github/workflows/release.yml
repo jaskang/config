@@ -5,26 +5,20 @@ on:
       - main
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
   version:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code repository
+      - name: Checkout Code Repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: setup node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Install pnpm
-        run: npm i pnpm@latest -g
-      - name: Setup npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - name: Setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+          cache: 'pnpm'
       - name: Install Dependencies
         run: pnpm install
       - name: Create Release Pull Request or Publish to npm
@@ -36,3 +30,4 @@ jobs:
           title: 'chore: update versions'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
