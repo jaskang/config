@@ -5,9 +5,12 @@
   "author": "jaskang",
   "private": "true",
   "scripts": {
-    "build": "echo \"no build\""
+    "build": "echo \"no build\"",
+    "ci:version": "pnpm changeset version && pnpm install --no-frozen-lockfile",
+    "ci:publish": "pnpm changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.2",
     "@types/node": "16",
     "eslint": "^8.28.0",
     "prettier": "^2.8.0",
