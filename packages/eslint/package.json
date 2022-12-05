@@ -8,11 +8,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.cjs",
+  "main": "index.js",
   "exports": {
-    ".": "./index.cjs",
-    "./react": "./react.cjs",
-    "./vue": "./vue.cjs"
+    ".": "./index.js",
+    "./react": "./react.js",
+    "./vue": "./vue.js"
   },
   "scripts": {},
   "dependencies": {
