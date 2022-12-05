@@ -9,6 +9,7 @@
     "change": "pnpm changeset"
   },
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1.13",
     "@changesets/cli": "^2.25.2",
     "@types/node": "16",
     "eslint": "^8.28.0",
