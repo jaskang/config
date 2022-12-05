@@ -8,18 +8,21 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
-  "exports": {},
-  "scripts": {},
-  "engines": {
-    "node": "^14.18.0 || >=16.0.0"
+  "main": "index.cjs",
+  "exports": {
+    ".": "./index.cjs",
+    "./react": "./react.cjs",
+    "./vue": "./vue.cjs"
   },
+  "scripts": {},
   "dependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-vue": "^9.8.0",
     "vue-eslint-parser": "^9.1.0"
   },
@@ -37,5 +40,8 @@
     "typescript": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
   }
 }
