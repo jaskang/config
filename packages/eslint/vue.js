@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['vue'],
   extends: ['plugin:vue/vue3-essential', require.resolve('./index')],
   overrides: [
     {
