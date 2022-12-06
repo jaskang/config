@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- [`bf2dfe7`](https://github.com/JasKang/config/commit/bf2dfe755681e24454b453d9a17449e26b42ca6e) - 更新规则
+
 ## 0.0.5
 
 ### Patch Changes
