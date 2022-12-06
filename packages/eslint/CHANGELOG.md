@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- [`6a3d807`](https://github.com/JasKang/config/commit/6a3d807a2bbab5e4520ba06374b2b451dc2a86a2) - fix: typescript-eslint
+
 ## 0.0.6
 
 ### Patch Changes
