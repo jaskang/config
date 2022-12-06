@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 0.0.6
+
+### Patch Changes
+
+- [`b9d78f4`](https://github.com/JasKang/config/commit/b9d78f41da85c8eed4732701358825289a40342f) - 修复 prettier 未导出
+
 ## 0.0.5
 
 ### Patch Changes
