@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [`8c8ff4a`](https://github.com/JasKang/config/commit/8c8ff4a4fccbaade67a476ded0bab267ea0151bf) - 修改导出方式
+
 ## 0.0.3
 
 ### Patch Changes
