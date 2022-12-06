@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 0.0.7
+
+### Patch Changes
+
+- [`94f3bba`](https://github.com/JasKang/config/commit/94f3bba07337e0c44e8806d44af3fd91e248c3ed) - 修复 prettier
+
 ## 0.0.6
 
 ### Patch Changes
