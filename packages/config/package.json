@@ -12,7 +12,7 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "prettierrc.js",
+    "prettier.js",
     "tsconfig.json",
     "tsconfig.node.json",
     "tsconfig.web.json"
