@@ -6,8 +6,8 @@ module.exports = {
       js: 'espree',
       jsx: 'espree',
 
-      ts: require.resolve('@typescript-eslint/parser'),
-      tsx: require.resolve('@typescript-eslint/parser')
+      ts: '@typescript-eslint/parser',
+      tsx: '@typescript-eslint/parser'
 
       // Leave the template parser unspecified, so that it could be determined by `<script lang="...">`
     },
@@ -24,7 +24,7 @@ module.exports = {
     node: true
   },
   plugins: ['@typescript-eslint', 'prettier'],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] }
