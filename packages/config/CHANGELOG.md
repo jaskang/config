@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 0.0.5
+
+### Patch Changes
+
+- [`025cb48`](https://github.com/JasKang/config/commit/025cb484651074003705649fc08ec2c856b18296) - 修改导出问题
+
 ## 0.0.4
 
 ### Patch Changes
