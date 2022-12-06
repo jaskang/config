@@ -10,11 +10,11 @@
     "registry": "https://registry.npmjs.org"
   },
   "main": "index.js",
-  "exports": {
-    ".": "./index.js",
-    "./react": "./react.js",
-    "./vue": "./vue.js"
-  },
+  "files": [
+    "index.js",
+    "react.js",
+    "vue.js"
+  ],
   "scripts": {},
   "dependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

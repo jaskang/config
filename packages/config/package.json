@@ -9,17 +9,10 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "main": "index.cjs",
-  "exports": {
-    ".": "./index.cjs",
-    "./prettier": "./prettierrc.cjs",
-    "./tsconfig": "./tsconfig.json",
-    "./tsconfigNode": "./tsconfig.node.json",
-    "./tsconfigWeb": "./tsconfig.web.json"
-  },
+  "main": "index.js",
   "files": [
-    "index.cjs",
-    "prettierrc.cjs",
+    "index.js",
+    "prettierrc.js",
     "tsconfig.json",
     "tsconfig.node.json",
     "tsconfig.web.json"
