@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 0.0.3
+
+### Patch Changes
+
+- [`811ad8c`](https://github.com/JasKang/config/commit/811ad8c0d1fa81cf1e55437cd9da706e9517267c) - 测试自动发布
+
 ## 0.0.2
 
 ### Patch Changes
