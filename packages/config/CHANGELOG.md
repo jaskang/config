@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 1.0.0
+
+### Major Changes
+
+- [`510ea65`](https://github.com/JasKang/config/commit/510ea65731c7de3db6027c9d93ac11fbc3253fde) - ts 5.0
+
 ## 0.0.7
 
 ### Patch Changes
