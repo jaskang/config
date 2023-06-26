@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 1.1.2
+
+### Patch Changes
+
+- [`2f74f2e`](https://github.com/JasKang/config/commit/2f74f2e73719112dc0cc57c6ff039808843c9baf) - fix sort import
+
 ## 1.1.1
 
 ### Patch Changes
