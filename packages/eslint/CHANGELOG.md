@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 1.1.1
+
+### Patch Changes
+
+- [`32544a7`](https://github.com/JasKang/config/commit/32544a77720346526633d15aebc31755ba5ccdf3) - css 和 副作用导入 在最前面
+
 ## 1.1.0
 
 ### Minor Changes
