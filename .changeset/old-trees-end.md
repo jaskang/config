@@ -1,6 +1,6 @@
 ---
-"@jaskang/eslint-config": major
+"@jaskang/eslint-config": minor
 "@jaskang/config": minor
 ---
 
-asdf
+更新 import 排序
