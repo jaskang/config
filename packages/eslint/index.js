@@ -61,6 +61,8 @@ module.exports = {
         type: "natural",
         order: "asc",
         groups: [
+          "style",
+          "side-effect",
           "type",
           "builtin-type",
           "builtin",
@@ -70,8 +72,6 @@ module.exports = {
           "internal",
           ["parent-type", "sibling-type", "index-type"],
           ["parent", "sibling", "index"],
-          "side-effect",
-          "style",
           "object",
           "unknown",
         ],
