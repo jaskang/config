@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- [`f8cf78c`](https://github.com/JasKang/config/commit/f8cf78c12c3ecd2be727dd3b148fb8b8d2cf9d53) - 更新 import 排序
+
 ## 0.0.7
 
 ### Patch Changes
