@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 1.1.3
+
+### Patch Changes
+
+- [`1cf6fb3`](https://github.com/JasKang/config/commit/1cf6fb3eb14f3d5dfd66615905f3f3ad362b3e58) - ban-ts-comment
+
 ## 1.1.2
 
 ### Patch Changes
