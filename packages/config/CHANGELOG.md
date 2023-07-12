@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 1.2.0
+
+### Minor Changes
+
+- [`168a1ac`](https://github.com/JasKang/config/commit/168a1ac4b2e1b7293cab3efe23815b5ec3d635b9) Thanks [@JasKang](https://github.com/JasKang)! - ban-types
+
 ## 1.1.0
 
 ### Minor Changes
