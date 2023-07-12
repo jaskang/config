@@ -15,7 +15,8 @@
     "prettier.js",
     "tsconfig.json",
     "tsconfig.node.json",
-    "tsconfig.web.json"
+    "tsconfig.react.json",
+    "tsconfig.vue.json"
   ],
   "scripts": {},
   "engines": {
