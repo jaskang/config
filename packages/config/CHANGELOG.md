@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 1.3.0
+
+### Minor Changes
+
+- [`3bb5c25`](https://github.com/JasKang/config/commit/3bb5c25cfced76118c5eb2fe1fcbad5cdb309d62) Thanks [@JasKang](https://github.com/JasKang)! - support node
+
 ## 1.2.0
 
 ### Minor Changes
