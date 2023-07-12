@@ -54,6 +54,17 @@ module.exports = {
     "import/no-duplicates": "error",
 
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-types': [
+      "error",
+      {
+        "types": {
+          // un-ban a type that's banned by default
+          "{}": false
+        },
+        "extendDefaults": true
+      }
+    ],
+    // vue
     'vue/multi-word-component-names': 'off',
   },
   overrides: [],

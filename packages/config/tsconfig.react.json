@@ -17,8 +17,7 @@
     // And `emitDeclarationOnly` is not always wanted.
     // Considering it's not likely to be commonly used in Vue codebases, we don't enable it here.
     // Required in Vue projects
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
+    "jsx": "react-jsx",
 
     // `"noImplicitThis": true` is part of `strict`
     // Added again here in case some users decide to disable `strict`.
@@ -49,5 +48,6 @@
     "forceConsistentCasingInFileNames": true,
     // See <https://github.com/vuejs/vue-cli/pull/5688>
     "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
   }
 }
