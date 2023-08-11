@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 2.0.0
+
+### Major Changes
+
+- [`f2ab455`](https://github.com/JasKang/config/commit/f2ab45502df09519d097c691c384e5601813d803) Thanks [@JasKang](https://github.com/JasKang)! - feat esm
+
 ## 1.3.0
 
 ### Minor Changes
