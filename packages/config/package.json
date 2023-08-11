@@ -5,11 +5,20 @@
   "keywords": [],
   "author": "jaskang",
   "license": "MIT",
+  "type": "module",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./prettier": "./prettier.js",
+    "./tsconfig.json": "./tsconfig.json",
+    "./tsconfig.node.json": "./tsconfig.node.json",
+    "./tsconfig.react.json": "./tsconfig.react.json",
+    "./tsconfig.vue.json": "./tsconfig.vue.json"
+  },
   "files": [
     "index.js",
     "prettier.js",

@@ -1,5 +1,3 @@
-const prettier = require("./prettier");
 
-export { prettier };
+export { default as prettier } from './prettier';
 
-module.exports = { prettier };
