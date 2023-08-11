@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [`5868146`](https://github.com/JasKang/config/commit/5868146b519e107b04482732f4d7061bc32aa1cd) Thanks [@JasKang](https://github.com/JasKang)! - feat prettier v3
+
 ## 1.2.0
 
 ### Minor Changes
