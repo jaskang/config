@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 2.0.1
+
+### Patch Changes
+
+- [`6586666`](https://github.com/JasKang/config/commit/658666697c370df9b0349d7071de49020c457705) Thanks [@JasKang](https://github.com/JasKang)! - fix: base -> tsconfig
+
 ## 2.0.0
 
 ### Major Changes
