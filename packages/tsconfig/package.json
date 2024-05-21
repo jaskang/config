@@ -1,0 +1,32 @@
+{
+  "name": "@jaskang/tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "jaskang",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "main": "tsconfig.base.json",
+  "exports": {
+    ".": "./tsconfig.base.json",
+    "./dts": "./tsconfig.dts.json",
+    "./node": "./tsconfig.node.json",
+    "./react": "./tsconfig.react.json",
+    "./vue": "./tsconfig.vue.json"
+  },
+  "files": [
+    "tsconfig.json",
+    "tsconfig.dts.json",
+    "tsconfig.node.json",
+    "tsconfig.react.json",
+    "tsconfig.vue.json"
+  ],
+  "scripts": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
