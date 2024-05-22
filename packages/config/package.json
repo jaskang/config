@@ -13,22 +13,11 @@
   "main": "index.js",
   "exports": {
     ".": "./index.js",
-    "./prettier": "./prettier.js",
-    "./tsconfig.json": "./tsconfig.json",
-    "./tsconfig.node.json": "./tsconfig.node.json",
-    "./tsconfig.react.json": "./tsconfig.react.json",
-    "./tsconfig.vue.json": "./tsconfig.vue.json"
+    "./prettier": "./prettier.js"
   },
   "files": [
     "index.js",
-    "prettier.js",
-    "tsconfig.json",
-    "tsconfig.node.json",
-    "tsconfig.react.json",
-    "tsconfig.vue.json"
+    "prettier.js"
   ],
-  "scripts": {},
-  "engines": {
-    "node": ">=16.0.0"
-  }
+  "scripts": {}
 }

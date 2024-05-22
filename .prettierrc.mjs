@@ -20,7 +20,7 @@ export default {
   jsxBracketSameLine: false,
   // 箭头函数形参周围包含圆括号
   arrowParens: "avoid",
-  // 换行行为
+  // 换行行为 
   proseWrap: "preserve",
   htmlWhitespaceSensitivity: "css",
   vueIndentScriptAndStyle: false,

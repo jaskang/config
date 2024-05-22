@@ -1,19 +1,12 @@
-module.exports = {
-  plugins: ["vue"],
-  extends: ["plugin:vue/vue3-essential", require.resolve("./index")],
-  overrides: [
-    {
-      files: ["*.vue"],
-      parser: "vue-eslint-parser",
-      parserOptions: {
-        parser: "@typescript-eslint/parser",
-      },
-      rules: {
-        "no-unused-vars": "off",
-        "no-undef": "off",
-        "@typescript-eslint/no-unused-vars": "off",
-      },
+import tseslint from 'typescript-eslint'
+import base from './index.js'
+
+export default tseslint.config(...base, {
+  ...vue.configs['flat/essential'],
+  languageOptions: {
+    ...vue.configs['flat/essential'][1].languageOptions,
+    parserOptions: {
+      parser: tseslint.parser,
     },
-  ],
-  rules: {},
-};
+  },
+})
