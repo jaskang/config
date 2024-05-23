@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- [`a04adb7`](https://github.com/JasKang/config/commit/a04adb72dee9b9a7e90e766f37b1cd292bbc1d48) - 内置规则
+
 ## 3.0.0
 
 ### Major Changes
