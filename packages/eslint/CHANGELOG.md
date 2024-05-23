@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- [`f42be3d`](https://github.com/JasKang/config/commit/f42be3d903d135666a2ba87b488334f3234051ca) - support eslint v9
+
 ## 2.0.0
 
 ### Major Changes
