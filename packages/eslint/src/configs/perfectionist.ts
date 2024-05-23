@@ -4,7 +4,9 @@ import plugin from 'eslint-plugin-perfectionist'
 export default function perfectionist(): ConfigWithExtends[] {
   return [
     {
-      plugins: [plugin] as any,
+      plugins: {
+        perfectionist: plugin,
+      },
       rules: {
         'perfectionist/sort-named-exports': ['error', { type: 'natural', order: 'asc' }],
         'perfectionist/sort-named-imports': ['error', { type: 'natural', order: 'asc' }],
@@ -13,6 +15,7 @@ export default function perfectionist(): ConfigWithExtends[] {
           {
             type: 'natural',
             order: 'asc',
+            'newlines-between': 'ignore',
             groups: [
               'type',
               'vue',
@@ -32,7 +35,7 @@ export default function perfectionist(): ConfigWithExtends[] {
               value: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
               type: { react: 'react', vue: 'vue' },
             },
-            'internal-pattern': ['@/**', '#/**'],
+            'internal-pattern': ['@/**', '#/**', '~/**'],
           },
         ],
       },

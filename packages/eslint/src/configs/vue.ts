@@ -16,6 +16,9 @@ export default function vue(options: { typescript: boolean }): ConfigWithExtends
           sourceType: 'module',
         },
       },
+      rules: {
+        'vue/multi-word-component-names': 'off',
+      },
     },
   ]
 }
