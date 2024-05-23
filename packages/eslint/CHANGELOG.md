@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.0.2
+
+### Patch Changes
+
+- [`6414fb8`](https://github.com/JasKang/config/commit/6414fb835c3b1791ef3af611b4aa50df48c1cc85) - rule no-unused-vars
+
 ## 3.0.1
 
 ### Patch Changes
