@@ -18,16 +18,8 @@ export default function typescript(): ConfigWithExtends[] {
           },
         ],
         '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/ban-types': 'off',
         '@typescript-eslint/no-explicit-any': 'warn',
-        '@typescript-eslint/ban-types': [
-          'error',
-          {
-            types: {
-              '{}': false,
-            },
-            extendDefaults: true,
-          },
-        ],
       },
     },
   ]
