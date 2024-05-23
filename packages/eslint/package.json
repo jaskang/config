@@ -10,23 +10,32 @@
     "registry": "https://registry.npmjs.org"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
-    "index.js",
-    "react.js",
-    "vue.js"
+    "dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "tsup"
+  },
   "dependencies": {
     "@eslint/js": "^9.3.0",
     "eslint-config-flat-gitignore": "^0.1.5",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-perfectionist": "^2.10.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-vue": "^9.26.0",
-    "typescript-eslint": "^8.0.0-alpha.14",
-    "vue-eslint-parser": "^9.4.2"
+    "globals": "^15.3.0",
+    "typescript-eslint": "^8.0.0-alpha.14"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "tsup": "^8.0.2"
   },
   "peerDependencies": {
     "eslint": ">= 9.0.0",

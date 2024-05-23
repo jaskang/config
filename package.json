@@ -5,7 +5,7 @@
   "author": "jaskang",
   "private": "true",
   "scripts": {
-    "build": "echo \"no build\"",
+    "build": "pnpm -r build",
     "change": "pnpm changeset",
     "release": "pnpm build && changeset publish"
   },
