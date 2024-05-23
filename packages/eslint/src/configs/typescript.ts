@@ -5,9 +5,6 @@ export default function typescript(): ConfigWithExtends[] {
     ...tslint.configs.recommended,
     {
       rules: {
-        '@typescript-eslint/ban-types': ['error', { '{}': false }],
-        '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/no-explicit-any': 'warn',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
           'error',
@@ -18,6 +15,17 @@ export default function typescript(): ConfigWithExtends[] {
             destructuredArrayIgnorePattern: '^_',
             varsIgnorePattern: '^_',
             ignoreRestSiblings: true,
+          },
+        ],
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/ban-types': [
+          'error',
+          {
+            types: {
+              '{}': false,
+            },
+            extendDefaults: true,
           },
         ],
       },
