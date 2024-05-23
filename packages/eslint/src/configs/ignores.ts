@@ -1,4 +1,3 @@
-import { type Linter } from 'eslint'
 import type { ConfigWithExtends } from 'typescript-eslint'
 
 export default function ignores(): ConfigWithExtends[] {

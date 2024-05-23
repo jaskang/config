@@ -1,4 +1,4 @@
-import tslint, { type ConfigWithExtends } from 'typescript-eslint'
+import { type ConfigWithExtends } from 'typescript-eslint'
 import plugin from 'eslint-plugin-perfectionist'
 
 export default function perfectionist(): ConfigWithExtends[] {

@@ -1,7 +1,6 @@
 import globals from 'globals'
-import { type Linter } from 'eslint'
 import js from '@eslint/js'
-import tslint, { type ConfigWithExtends } from 'typescript-eslint'
+import { type ConfigWithExtends } from 'typescript-eslint'
 
 export default function javascript(): ConfigWithExtends[] {
   return [
