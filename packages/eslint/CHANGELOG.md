@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.0.3
+
+### Patch Changes
+
+- [`9c73d08`](https://github.com/JasKang/config/commit/9c73d08f34d03fd2406bfe3db5d139b88a87ba1b) - 修复 ts ban-types
+
 ## 3.0.2
 
 ### Patch Changes
