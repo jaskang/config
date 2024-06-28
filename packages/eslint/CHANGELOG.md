@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.0.5
+
+### Patch Changes
+
+- [`b906930`](https://github.com/JasKang/config/commit/b9069301eb30564d2b05e102a65d039ba48e1570) - fix eslint ban-type
+
 ## 3.0.4
 
 ### Patch Changes
