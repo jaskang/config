@@ -18,13 +18,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: 💼 corepack enable
-
       - name: 🟢 Setup node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
+
+      - name: 💼 Enable Corepack
+        run: corepack enable
 
       - name: 🔆 Setup Config
         run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
