@@ -1,5 +1,11 @@
 # @jaskang/config
 
+## 2.0.2
+
+### Patch Changes
+
+- [`e4a1335`](https://github.com/JasKang/config/commit/e4a133548e37cda38800a8d09d4ca2659ae1d91d) Thanks [@JasKang](https://github.com/JasKang)! - print width
+
 ## 2.0.1
 
 ### Patch Changes
