@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.1.0
+
+### Minor Changes
+
+- [`ccf6234`](https://github.com/JasKang/config/commit/ccf623481d43ae10f010ff02777a5c938ad0f5e3) - feat: sort import
+
 ## 3.0.5
 
 ### Patch Changes
