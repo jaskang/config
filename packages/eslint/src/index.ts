@@ -3,9 +3,9 @@ import tseslint, { type ConfigWithExtends } from 'typescript-eslint'
 import type { Linter } from 'eslint'
 import ignores from './configs/ignores'
 import javascript from './configs/javascript'
-import perfectionist from './configs/perfectionist'
 import typescript from './configs/typescript'
 import vue from './configs/vue'
+import prettier from './configs/prettier'
 
 export type JasOptions = {
   vue?: boolean
@@ -14,7 +14,7 @@ export type JasOptions = {
 
 export function config(options: JasOptions = {}, ...userConfigs: Linter.FlatConfig[]) {
   const { vue: vueOptions = true, typescript: tsOptions = true } = options
-  const configs: ConfigWithExtends[] = [gitignore(), ...ignores(), ...javascript(), ...perfectionist(), ...userConfigs]
+  const configs: ConfigWithExtends[] = [gitignore(), ...ignores(), ...javascript(), ...userConfigs, ...prettier()]
   if (tsOptions) {
     configs.push(...typescript())
   }

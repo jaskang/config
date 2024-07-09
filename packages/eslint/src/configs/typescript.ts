@@ -5,18 +5,8 @@ export default function typescript(): ConfigWithExtends[] {
     ...tslint.configs.recommended,
     {
       rules: {
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          {
-            args: 'none',
-            caughtErrors: 'all',
-            caughtErrorsIgnorePattern: '^_',
-            destructuredArrayIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
-            ignoreRestSiblings: true,
-          },
-        ], 
+        // unused-imports 需要关闭 @typescript-eslint/no-unused-vars
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-empty-object-type': 'off',
         '@typescript-eslint/no-explicit-any': 'warn',
