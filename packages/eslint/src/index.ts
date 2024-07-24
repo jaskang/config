@@ -12,16 +12,17 @@ export type JasOptions = {
   typescript?: boolean
 }
 
-export function config(options: JasOptions = {}, ...userConfigs: Linter.FlatConfig[]) {
+export function config(options: JasOptions = {}, ...userConfigs: Linter.Config[]) {
   const { vue: vueOptions = true, typescript: tsOptions = true } = options
-  const configs: ConfigWithExtends[] = [gitignore(), ...ignores(), ...javascript(), ...userConfigs, ...prettier()]
+  const configs: Linter.Config[] = [gitignore(), ...ignores(), ...javascript()]
   if (tsOptions) {
     configs.push(...typescript())
   }
   if (vueOptions) {
     configs.push(...vue({ typescript: !!tsOptions }))
   }
-  return tseslint.config(...configs) as Linter.FlatConfig[]
+  configs.push(...userConfigs, ...prettier())
+  return tseslint.config(...(configs as ConfigWithExtends[])) as Linter.Config[]
 }
 
 export default config

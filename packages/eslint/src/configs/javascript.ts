@@ -1,10 +1,10 @@
 import globals from 'globals'
 import js from '@eslint/js'
-import { type ConfigWithExtends } from 'typescript-eslint'
+import type { Linter } from 'eslint'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 
-export default function javascript(): ConfigWithExtends[] {
+export default function javascript(): Linter.Config[] {
   return [
     {
       plugins: {

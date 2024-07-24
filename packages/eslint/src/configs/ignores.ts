@@ -1,6 +1,6 @@
-import type { ConfigWithExtends } from 'typescript-eslint'
+import type { Linter } from 'eslint'
 
-export default function ignores(): ConfigWithExtends[] {
+export default function ignores(): Linter.Config[] {
   return [
     {
       // Awaits https://github.com/humanwhocodes/config-array/pull/131
