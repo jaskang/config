@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.1.1
+
+### Patch Changes
+
+- [`4df39a8`](https://github.com/JasKang/config/commit/4df39a8fe1df9dd8cb371b45a5ba317b43ea1f7b) - feat: update deps
+
 ## 3.1.0
 
 ### Minor Changes
