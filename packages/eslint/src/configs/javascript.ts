@@ -79,7 +79,6 @@ export default function javascript(): ConfigWithExtends[] {
             args: 'none',
             caughtErrors: 'all',
             caughtErrorsIgnorePattern: '^_',
-            destructuredArrayIgnorePattern: '^_',
             varsIgnorePattern: '^_',
             ignoreRestSiblings: true,
           },

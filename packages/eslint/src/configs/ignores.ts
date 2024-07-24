@@ -6,6 +6,8 @@ export default function ignores(): ConfigWithExtends[] {
       // Awaits https://github.com/humanwhocodes/config-array/pull/131
       // name: 'antfu/ignores',
       ignores: [
+        '**/miniprogram_npm',
+
         '**/node_modules',
         '**/dist',
         '**/package-lock.json',
@@ -32,9 +34,9 @@ export default function ignores(): ConfigWithExtends[] {
         '**/.yarn',
 
         '**/CHANGELOG*.md',
-        '**/*.min.*',
         '**/LICENSE*',
         '**/__snapshots__',
+        '**/*.min.*',
         '**/auto-import?(s).d.ts',
         '**/components.d.ts',
       ],
