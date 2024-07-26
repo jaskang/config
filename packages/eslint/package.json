@@ -27,12 +27,15 @@
     "@eslint/js": "^9.7.0",
     "eslint-config-flat-gitignore": "^0.1.8",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "5.1.0-beta-26f2496093-20240514",
+    "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.0.1",
     "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.8.0",
     "oxc-resolver": "^1.10.2",
-    "typescript-eslint": "^8.0.0-alpha.52"
+    "typescript-eslint": "^8.0.0-alpha.54"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
