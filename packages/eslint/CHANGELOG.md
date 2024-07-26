@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.2.1
+
+### Patch Changes
+
+- [`e2992e4`](https://github.com/JasKang/config/commit/e2992e4aec84ad347c3b9cf3751b2a4620fa7198) Thanks [@JasKang](https://github.com/JasKang)! - fix prettier config dep
+
 ## 3.2.0
 
 ### Minor Changes
