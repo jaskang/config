@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.2.0
+
+### Minor Changes
+
+- [`6b0ccef`](https://github.com/JasKang/config/commit/6b0cceff082fd49e394c5cf50341b72c1c1b0f70) Thanks [@JasKang](https://github.com/JasKang)! - add react config
+
 ## 3.1.1
 
 ### Patch Changes
