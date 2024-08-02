@@ -1,5 +1,11 @@
 # @jaskang/tsconfig
 
+## 1.0.2
+
+### Patch Changes
+
+- [`bdedcaa`](https://github.com/JasKang/config/commit/bdedcaabe6ea593c23489a28f7d343987fdccb24) - fix prettier endOfLine
+
 ## 1.0.1
 
 ### Patch Changes
