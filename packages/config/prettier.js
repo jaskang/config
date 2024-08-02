@@ -23,5 +23,6 @@ export default {
   // 换行行为
   proseWrap: 'preserve',
   htmlWhitespaceSensitivity: 'css',
+  endOfLine: 'auto',
   vueIndentScriptAndStyle: false,
 }
