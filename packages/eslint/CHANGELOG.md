@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.2.3
+
+### Patch Changes
+
+- [`7032293`](https://github.com/JasKang/config/commit/70322936f139ef6d19c018ef88c28a3035caefc2) - add perfectionist
+
 ## 3.2.2
 
 ### Patch Changes
