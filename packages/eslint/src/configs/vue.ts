@@ -1,8 +1,7 @@
-import tslint from 'typescript-eslint'
+import tslint, { type ConfigWithExtends } from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
-import type { Linter } from 'eslint'
 
-export default function vue(options: { typescript: boolean }): Linter.Config[] {
+export default function vue(options: { typescript: boolean }): ConfigWithExtends[] {
   return [
     ...pluginVue.configs['flat/essential'],
     {

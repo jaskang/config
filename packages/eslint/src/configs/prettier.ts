@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint'
 import prettierRecommended from 'eslint-plugin-prettier/recommended'
+import type { ConfigWithExtends } from 'typescript-eslint'
 
-export default function prettier(): Linter.Config[] {
-  return [prettierRecommended]
+export default function prettier(): ConfigWithExtends[] {
+  return [prettierRecommended] as ConfigWithExtends[]
 }

@@ -1,9 +1,8 @@
-import type { Linter } from 'eslint'
-import tslint from 'typescript-eslint'
+import tslint, { type ConfigWithExtends } from 'typescript-eslint'
 
-export default function typescript(): Linter.Config[] {
+export default function typescript(): ConfigWithExtends[] {
   return [
-    ...(tslint.configs.recommended as any[]),
+    ...tslint.configs.recommended,
     {
       rules: {
         // unused-imports 需要关闭 @typescript-eslint/no-unused-vars

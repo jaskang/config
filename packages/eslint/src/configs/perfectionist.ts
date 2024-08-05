@@ -15,12 +15,13 @@ export default function perfectionist(): ConfigWithExtends[] {
           {
             type: 'natural',
             order: 'asc',
-            'newlines-between': 'ignore',
+            newlinesBetween: 'ignore',
             groups: [
               'type',
+              'builtin',
               'vue',
               'react',
-              ['builtin', 'external'],
+              'external',
               'internal-type',
               'internal',
               ['parent-type', 'sibling-type', 'index-type'],
@@ -31,11 +32,11 @@ export default function perfectionist(): ConfigWithExtends[] {
               'side-effect-style',
               'unknown',
             ],
-            'custom-groups': {
+            customGroups: {
               value: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
               type: { react: 'react', vue: 'vue' },
             },
-            'internal-pattern': ['@/**', '#/**', '~/**'],
+            internalPattern: ['@/**', '#/**', '~/**'],
           },
         ],
       },

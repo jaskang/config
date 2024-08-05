@@ -1,11 +1,10 @@
-import type { Linter } from 'eslint'
 import react from 'eslint-plugin-react'
 import hooks from 'eslint-plugin-react-hooks'
 import refresh from 'eslint-plugin-react-refresh'
 import { GLOB_SRC } from '../globs'
-import ts from 'typescript-eslint'
+import ts, { type ConfigWithExtends } from 'typescript-eslint'
 
-export default function typescript(): Linter.Config[] {
+export default function typescript(): ConfigWithExtends[] {
   return [
     {
       plugins: {

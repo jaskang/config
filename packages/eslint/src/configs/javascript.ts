@@ -1,14 +1,12 @@
 import globals from 'globals'
 import js from '@eslint/js'
-import type { Linter } from 'eslint'
-import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
+import type { ConfigWithExtends } from 'typescript-eslint'
 
-export default function javascript(): Linter.Config[] {
+export default function javascript(): ConfigWithExtends[] {
   return [
     {
       plugins: {
-        'simple-import-sort': simpleImportSort,
         'unused-imports': unusedImports,
       },
       languageOptions: {
@@ -38,40 +36,6 @@ export default function javascript(): Linter.Config[] {
         'no-duplicate-imports': 'error',
         // unused-imports 需要关闭 no-unused-vars
         'no-unused-vars': 'off',
-        'simple-import-sort/imports': [
-          'error',
-          {
-            groups: [
-              [
-                // 副作用导入
-                '^\\u0000',
-                // node 内置导入
-                '^node:',
-                // Packages. `react` related packages come first.
-                '^react',
-                '^@react',
-                '^vue',
-                '^@vue',
-                '^@?\\w',
-                // Internal packages.
-                '^@/',
-                // 父级导入，'..' 放在最后
-                '^\\.\\.(?!/?$)',
-                '^\\.\\./?$',
-                // 其他相对路径的导入，'.' 放在最后
-                '^\\./(?=.*/)(?!/?$)',
-                '^\\.(?!/?$)',
-                '^\\./?$',
-              ],
-              [
-                // 样式导入
-                '^\\.(scss|less|css|wxss)$',
-              ],
-            ],
-          },
-        ],
-        'simple-import-sort/exports': 'error',
-
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': [
           'error',
