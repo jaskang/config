@@ -13,17 +13,23 @@
   "main": "tsconfig.json",
   "exports": {
     ".": "./tsconfig.json",
-    "./dts": "./tsconfig.dts.json",
-    "./node": "./tsconfig.node.json",
-    "./react": "./tsconfig.react.json",
-    "./vue": "./tsconfig.vue.json"
+    "./tsconfig.json": "./tsconfig.json",
+    "./tsconfig.dts.json": "./tsconfig.dts.json",
+    "./tsconfig.node.json": "./tsconfig.node.json",
+    "./tsconfig.react.json": "./tsconfig.react.json",
+    "./tsconfig.vue.json": "./tsconfig.vue.json",
+    "./tsconfig.miniapp.json": "./tsconfig.miniapp.json"
   },
   "files": [
     "./tsconfig.json",
     "./tsconfig.dts.json",
     "./tsconfig.node.json",
     "./tsconfig.react.json",
-    "./tsconfig.vue.json"
+    "./tsconfig.vue.json",
+    "./tsconfig.miniapp.json"
   ],
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "miniprogram-api-typings": "^3.12.3"
+  }
 }
