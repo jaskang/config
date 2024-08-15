@@ -1,5 +1,11 @@
 # @jaskang/tsconfig
 
+## 1.1.0
+
+### Minor Changes
+
+- [`f60e6d5`](https://github.com/JasKang/config/commit/f60e6d525055305e80f849dcd9a9457e60876c16) Thanks [@JasKang](https://github.com/JasKang)! - tsconfig export
+
 ## 1.0.2
 
 ### Patch Changes
