@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.2.4
+
+### Patch Changes
+
+- [`f60e6d5`](https://github.com/JasKang/config/commit/f60e6d525055305e80f849dcd9a9457e60876c16) Thanks [@JasKang](https://github.com/JasKang)! - tsconfig export
+
 ## 3.2.3
 
 ### Patch Changes
