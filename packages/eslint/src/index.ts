@@ -16,14 +16,14 @@ export type Options = {
 }
 
 export function config(options: Options = {}, ...userConfigs: ConfigWithExtends[]) {
-  const { vue: vueOptions = true, typescript: tsOptions = true, react: reactOptions } = options
+  const { vue: vueOptions, typescript: tsOptions = true, react: reactOptions } = options
   const configs: ConfigWithExtends[] = [gitignore(), ...ignores(), ...javascript()]
   if (tsOptions) {
     configs.push(...typescript())
   }
   configs.push(...perfectionist())
   if (vueOptions) {
-    configs.push(...vue({ typescript: !!tsOptions }))
+    configs.push(...vue({ typescript: tsOptions }))
   }
   if (reactOptions) {
     configs.push(...react())

@@ -1,14 +1,11 @@
 import globals from 'globals'
 import js from '@eslint/js'
-import unusedImports from 'eslint-plugin-unused-imports'
 import type { ConfigWithExtends } from 'typescript-eslint'
 
 export default function javascript(): ConfigWithExtends[] {
   return [
     {
-      plugins: {
-        'unused-imports': unusedImports,
-      },
+      plugins: {},
       languageOptions: {
         ecmaVersion: 2022,
         globals: {
@@ -34,16 +31,14 @@ export default function javascript(): ConfigWithExtends[] {
       rules: {
         ...js.configs.recommended.rules,
         'no-duplicate-imports': 'error',
-        // unused-imports 需要关闭 no-unused-vars
-        'no-unused-vars': 'off',
-        'unused-imports/no-unused-imports': 'error',
-        'unused-imports/no-unused-vars': [
+        'no-unused-vars': [
           'error',
           {
             args: 'none',
+            varsIgnorePattern: '^_',
             caughtErrors: 'all',
             caughtErrorsIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
+            destructuredArrayIgnorePattern: '^_',
             ignoreRestSiblings: true,
           },
         ],
