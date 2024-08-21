@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.2.5
+
+### Patch Changes
+
+- [`4b69053`](https://github.com/JasKang/config/commit/4b69053d4e896ab34a2a4de9684917d8b8e3dd9a) - feat: import eslint
+
 ## 3.2.4
 
 ### Patch Changes
