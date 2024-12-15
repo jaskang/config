@@ -1,5 +1,6 @@
 import globals from 'globals'
 import js from '@eslint/js'
+import tseslint from 'typescript-eslint'
 import type { ConfigWithExtends } from 'typescript-eslint'
 
 export default function javascript(): ConfigWithExtends[] {

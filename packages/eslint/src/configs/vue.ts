@@ -1,24 +1,24 @@
 import tslint, { type ConfigWithExtends } from 'typescript-eslint'
-import pluginVue from 'eslint-plugin-vue'
+import vuePlugin from 'eslint-plugin-vue'
+import typescriptEslint from 'typescript-eslint'
 
-export default function vue(options: { typescript: boolean }): ConfigWithExtends[] {
-  return [
-    ...pluginVue.configs['flat/essential'],
-    {
-      files: ['*.vue', '**/*.vue'],
-      languageOptions: {
-        parserOptions: {
-          ecmaFeatures: {
-            jsx: true,
-          },
-          extraFileExtensions: ['.vue'],
-          parser: options.typescript ? tslint.parser : null,
-          sourceType: 'module',
-        },
-      },
-      rules: {
-        'vue/multi-word-component-names': 'off',
+export default function vue(): ConfigWithExtends {
+  return {
+    extends: [vuePlugin.configs['flat/essential']],
+    files: ['**/*.vue'],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 'latest',
+        extraFileExtensions: ['.vue'],
+        sourceType: 'module',
+        parser: typescriptEslint.parser,
       },
     },
-  ]
+    plugins: {
+      vue: vuePlugin,
+    },
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
+  }
 }

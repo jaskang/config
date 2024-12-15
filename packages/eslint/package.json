@@ -24,23 +24,20 @@
     "build": "tsup"
   },
   "dependencies": {
-    "@eslint/js": "^9.9.0",
-    "eslint-config-flat-gitignore": "^0.1.8",
+    "@eslint/js": "^9.17.0",
+    "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-perfectionist": "^3.2.0",
+    "eslint-plugin-perfectionist": "^4.3.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^5.1.0-beta-26f2496093-20240514",
-    "eslint-plugin-react-refresh": "^0.4.10",
-    "eslint-plugin-vue": "^9.27.0",
-    "globals": "^15.9.0",
-    "oxc-resolver": "^1.10.2",
-    "typescript-eslint": "^8.2.0"
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "oxc-resolver": "^3.0.3",
+    "typescript-eslint": "^8.18.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
-  },
-  "devDependencies": {
-    "@types/eslint": "^9.6.0"
   }
 }

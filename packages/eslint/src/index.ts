@@ -1,35 +1,59 @@
+import js from '@eslint/js'
+import globals from 'globals'
 import gitignore from 'eslint-config-flat-gitignore'
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint'
-import type { Linter } from 'eslint'
-import ignores from './configs/ignores'
-import javascript from './configs/javascript'
-import typescript from './configs/typescript'
-import react from './configs/react'
+
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
 import vue from './configs/vue'
-import prettier from './configs/prettier'
 import perfectionist from './configs/perfectionist'
+import { GLOB_EXCLUDE } from './globs'
+import prettier from 'eslint-plugin-prettier/recommended'
 
 export type Options = {
   react?: boolean
   vue?: boolean
-  typescript?: boolean
 }
 
 export function config(options: Options = {}, ...userConfigs: ConfigWithExtends[]) {
-  const { vue: vueOptions, typescript: tsOptions = true, react: reactOptions } = options
-  const configs: ConfigWithExtends[] = [gitignore(), ...ignores(), ...javascript()]
-  if (tsOptions) {
-    configs.push(...typescript())
-  }
-  configs.push(...perfectionist())
+  const { vue: vueOptions, react: reactOptions } = options
+  const configs: ConfigWithExtends[] = [
+    gitignore(),
+    {
+      ignores: GLOB_EXCLUDE,
+    },
+    {
+      extends: [js.configs.recommended, ...tseslint.configs.recommended],
+      files: ['**/*.{ts,tsx}'],
+      languageOptions: {
+        ecmaVersion: 2022,
+        globals: {
+          ...globals.browser,
+          ...globals.es2021,
+          ...globals.node,
+          document: 'readonly',
+          navigator: 'readonly',
+          window: 'readonly',
+        },
+      },
+    },
+  ]
   if (vueOptions) {
-    configs.push(...vue({ typescript: tsOptions }))
+    configs.push(vue())
+  } else if (reactOptions) {
+    configs.push({
+      plugins: {
+        'react-hooks': reactHooks,
+        'react-refresh': reactRefresh,
+      },
+      rules: {
+        ...reactHooks.configs.recommended.rules,
+        'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      },
+    })
   }
-  if (reactOptions) {
-    configs.push(...react())
-  }
-  configs.push(...userConfigs, ...prettier())
-  return tseslint.config(...(configs as ConfigWithExtends[])) as ConfigWithExtends[]
+  configs.push(perfectionist(), prettier, ...userConfigs)
+  return tseslint.config(configs)
 }
 
 export default config
