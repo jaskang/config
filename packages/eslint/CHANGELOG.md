@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.3.1
+
+### Patch Changes
+
+- [`dd1ad47`](https://github.com/jaskang/config/commit/dd1ad4748acfafeb29806de98fb31a441b280a41) Thanks [@jaskang](https://github.com/jaskang)! - fix typo
+
 ## 3.3.0
 
 ### Minor Changes
