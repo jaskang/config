@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "release": "pnpm build && changeset publish"
+    "release": "release-it"
   },
   "dependencies": {
     "@eslint/js": "^9.17.0",
