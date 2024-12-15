@@ -1,5 +1,11 @@
 # @jaskang/eslint-config
 
+## 3.3.0
+
+### Minor Changes
+
+- [`10a31cd`](https://github.com/jaskang/config/commit/10a31cd9d51f1492d8b4b98a42171f56365cae67) Thanks [@jaskang](https://github.com/jaskang)! - sdf
+
 ## 3.2.5
 
 ### Patch Changes
