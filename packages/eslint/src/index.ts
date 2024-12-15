@@ -2,7 +2,7 @@ import js from '@eslint/js'
 import globals from 'globals'
 import gitignore from 'eslint-config-flat-gitignore'
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint'
-
+import { type Linter } from 'eslint'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import vue from './configs/vue'
@@ -53,7 +53,7 @@ export function config(options: Options = {}, ...userConfigs: ConfigWithExtends[
     })
   }
   configs.push(perfectionist(), prettier, ...userConfigs)
-  return tseslint.config(configs)
+  return tseslint.config(configs) as Linter.Config
 }
 
 export default config
