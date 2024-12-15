@@ -1,10 +1,24 @@
 {
+  "$schema": "https://unpkg.com/release-it@17/schema/release-it.json",
   "plugins": {
-    "release-it-pnpm": {}
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
   },
   "git": {
     "commitMessage": "chore: release v${version}",
-    "tagName": "v${version}"
+    "tagName": "v${version}",
+    "commit": true,
+    "tag": true,
+    "push": true
+  },
+  "npm": {
+    "publish": true,
+    "skipChecks": true
+  },
+  "github": {
+    "release": true
   },
   "hooks": {
     "after:bump": "pnpm run build",
