@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "release-it-pnpm": {}
+  },
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}"
+  },
+  "hooks": {
+    "after:bump": "npm run build",
+    "after:release": "echo Successfully released ${name} v${version}."
+  }
+}

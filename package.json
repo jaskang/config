@@ -1,13 +1,50 @@
 {
-  "name": "root",
-  "version": "0.0.1",
+  "name": "@jaskang/config",
+  "version": "2.0.3",
   "description": "配置文件包",
   "author": "jaskang",
-  "private": "true",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/dts.json": "./tsconfig/dts.json",
+    "./tsconfig/node.json": "./tsconfig/node.json",
+    "./tsconfig/react.json": "./tsconfig/react.json",
+    "./tsconfig/vue.json": "./tsconfig/vue.json",
+    "./tsconfig/miniapp.json": "./tsconfig/miniapp.json"
+  },
+  "files": [
+    "dist",
+    "tsconfig"
+  ],
   "scripts": {
-    "build": "pnpm -r build",
-    "change": "pnpm changeset",
+    "build": "tsup",
     "release": "pnpm build && changeset publish"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint-config-flat-gitignore": "^0.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-perfectionist": "^4.3.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "miniprogram-api-typings": "^4.0.2",
+    "oxc-resolver": "^3.0.3",
+    "typescript-eslint": "^8.18.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
@@ -16,6 +53,8 @@
     "@types/node": "20.12.12",
     "eslint": "^9.17.0",
     "prettier": "^3.4.2",
+    "release-it": "^17.10.0",
+    "release-it-pnpm": "^4.6.3",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },

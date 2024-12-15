@@ -1,7 +1,0 @@
-{
-  "extends": "../tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": "."
-  },
-  "include": ["env.d.ts", "src/**/*"]
-}

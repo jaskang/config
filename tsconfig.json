@@ -1,7 +1,7 @@
 {
-  "extends": "./packages/tsconfig/tsconfig.json",
+  "extends": "./tsconfig/base.json",
   "compilerOptions": {
-    "types": ["node"]
+    "baseUrl": "./"
   },
-  "include": ["packages/*/tsup.config.ts"]
+  "include": ["env.d.ts", "src/**/*.ts"]
 }

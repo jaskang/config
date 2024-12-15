@@ -2,20 +2,22 @@ import js from '@eslint/js'
 import globals from 'globals'
 import gitignore from 'eslint-config-flat-gitignore'
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint'
-import { type Linter } from 'eslint'
+import type { Linter, ESLint } from 'eslint'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import vue from './configs/vue'
 import perfectionist from './configs/perfectionist'
 import { GLOB_EXCLUDE } from './globs'
-import prettier from 'eslint-plugin-prettier/recommended'
+import prettierRecommended from 'eslint-plugin-prettier/recommended'
+
+import { prettier } from './prettier'
 
 export type Options = {
   react?: boolean
   vue?: boolean
 }
 
-export function config(options: Options = {}, ...userConfigs: ConfigWithExtends[]) {
+export function eslint(options: Options = {}, ...userConfigs: ConfigWithExtends[]) {
   const { vue: vueOptions, react: reactOptions } = options
   const configs: ConfigWithExtends[] = [
     gitignore(),
@@ -43,17 +45,19 @@ export function config(options: Options = {}, ...userConfigs: ConfigWithExtends[
   } else if (reactOptions) {
     configs.push({
       plugins: {
-        'react-hooks': reactHooks,
+        'react-hooks': reactHooks as ESLint.Plugin,
         'react-refresh': reactRefresh,
       },
       rules: {
-        ...reactHooks.configs.recommended.rules,
+        ...(reactHooks.configs.recommended.rules as Linter.RulesRecord),
         'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       },
     })
   }
-  configs.push(perfectionist(), prettier, ...userConfigs)
+  configs.push(perfectionist(), prettierRecommended, ...userConfigs)
   return tseslint.config(configs) as Linter.Config
 }
 
-export default config
+export const configs = {
+  prettier,
+}

@@ -1,47 +1,42 @@
 name: Release
+
+permissions:
+  contents: write
+  id-token: write
+
 on:
-  push:
-    branches:
-      - main
-env:
-  CI: true
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  workflow_dispatch:
+
 jobs:
   release:
-    name: 🚀 Release
-    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-      - name: ⬇️ Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: 💼 Enable Corepack
-        run: corepack enable
+      - name: Git config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "jaskang@qq.com"
 
-      - name: 🟢 Setup node
+      - name: Set node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'pnpm'
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
 
-      - name: 🔆 Setup Config
-        run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: 🧩 Install Dependencies
-        run: pnpm install
-
-      - name: 📣 Create Release Pull Request
-        uses: changesets/action@v1
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
         with:
-          version: pnpm changeset version
-          publish: pnpm release
-          commit: 'chore(release): version packages 🦋 [skip ci]'
-          title: 'chore(release): version packages 🦋'
+          run_install: |
+            - args: [--frozen-lockfile]
+
+      - name: Release
+        run: npx release-it --verbose
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          # Add following line if you are publishing to npm
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_CONFIG_PROVENANCE: true
+          # Add more env variables if needed
