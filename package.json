@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "release": "release-it --only-version"
+    "release": "release-it"
   },
   "dependencies": {
     "@eslint/js": "^9.17.0",
