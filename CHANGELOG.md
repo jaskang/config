@@ -1,5 +1,17 @@
 
 
+# [2.1.0](https://github.com/JasKang/config/compare/v2.0.6...v2.1.0) (2024-12-16)
+
+
+### Bug Fixes
+
+* react ([8efac2c](https://github.com/JasKang/config/commit/8efac2c5bf11aa351545d2ea05cf7df35c8cd32c))
+
+
+### Features
+
+* react ([2ce2f74](https://github.com/JasKang/config/commit/2ce2f74499c323662310a5bb5c1bfae01f175016))
+
 ## [2.0.6](https://github.com/JasKang/config/compare/v2.0.5...v2.0.6) (2024-12-15)
 
 
