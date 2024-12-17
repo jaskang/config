@@ -30,6 +30,7 @@
     /* If NOT transpiling with TypeScript: */
     "module": "ESNext",
     "noEmit": true,
+    "allowImportingTsExtensions": true,
     /* If your code doesn't run in the DOM: */
     "lib": ["ES2020"]
 
@@ -37,7 +38,6 @@
     // "lib": ["ES2020", "DOM", "DOM.Iterable"],
 
     /* Bundler mode */
-    // "allowImportingTsExtensions": true,
     /* Linting */
     // "noUncheckedSideEffectImports": true
     // "jsx": "react-jsx",
