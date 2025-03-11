@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.2.2
+
+### Patch Changes
+
+- [`a20bc21`](https://github.com/jaskang/config/commit/a20bc210521b59defa5dde34fd67185ca571d7ed) Thanks [@jaskang](https://github.com/jaskang)! - 升级依赖
+
 ## 2.2.1
 
 ### Patch Changes
