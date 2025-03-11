@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.2.0
+
+### Minor Changes
+
+- [`88c7759`](https://github.com/jaskang/config/commit/88c7759f442f30a093812cdc2ae5012d05f71ea0) Thanks [@jaskang](https://github.com/jaskang)! - 更新依赖
+
 ### Patch Changes
 
 - [`c7e825a`](https://github.com/jaskang/config/commit/c7e825adfdf517869df7c00b18fc4126ca4568b2) Thanks [@jaskang](https://github.com/jaskang)! - 修复 allowImportingTsExtensions
