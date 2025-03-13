@@ -16,16 +16,21 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./tsconfig/base.json": "./tsconfig/base.json",
-    "./tsconfig/dts.json": "./tsconfig/dts.json",
-    "./tsconfig/node.json": "./tsconfig/node.json",
-    "./tsconfig/react.json": "./tsconfig/react.json",
-    "./tsconfig/vue.json": "./tsconfig/vue.json",
-    "./tsconfig/miniapp.json": "./tsconfig/miniapp.json"
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsconfig.dts.json": "./tsconfig.dts.json",
+    "./tsconfig.node.json": "./tsconfig.node.json",
+    "./tsconfig.react.json": "./tsconfig.react.json",
+    "./tsconfig.vue.json": "./tsconfig.vue.json",
+    "./tsconfig.miniapp.json": "./tsconfig.miniapp.json"
   },
   "files": [
     "dist",
-    "tsconfig"
+    "tsconfig.base.json",
+    "tsconfig.dts.json",
+    "tsconfig.node.json",
+    "tsconfig.react.json",
+    "tsconfig.vue.json",
+    "tsconfig.miniapp.json"
   ],
   "scripts": {
     "build": "tsup",

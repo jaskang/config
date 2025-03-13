@@ -1,4 +1,4 @@
-export const prettier = {
+export const prettier = () => ({
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
@@ -25,4 +25,4 @@ export const prettier = {
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'auto',
   vueIndentScriptAndStyle: false,
-}
+})
