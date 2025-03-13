@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.3.0
+
+### Minor Changes
+
+- [`2b36770`](https://github.com/jaskang/config/commit/2b36770de7be88a855cdef8ddfb72afbb92b4123) Thanks [@jaskang](https://github.com/jaskang)! - 调整导出
+
 ## 2.2.2
 
 ### Patch Changes
