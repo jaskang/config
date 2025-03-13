@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.4.0
+
+### Minor Changes
+
+- [`79e69f5`](https://github.com/jaskang/config/commit/79e69f5d3e2804c2dbd92a4ca6fcf865bfa81d95) Thanks [@jaskang](https://github.com/jaskang)! - 修复 tsconfig extends 问题
+
 ## 2.3.0
 
 ### Minor Changes
