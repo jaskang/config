@@ -2,6 +2,7 @@ import globals from 'globals'
 import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import type { ConfigWithExtends } from 'typescript-eslint'
+import * as importX from 'eslint-plugin-import-x'
 import { GLOB_SRC } from '../globs'
 
 export default function javascript(): ConfigWithExtends {
@@ -20,19 +21,21 @@ export default function javascript(): ConfigWithExtends {
       },
     },
     rules: {
-      'no-unused-vars': 'off',
-
+      'no-duplicate-imports': 'error',
       '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
           args: 'none',
-          varsIgnorePattern: '^_',
+          // args: 'all',
+          // argsIgnorePattern: '^_',
           caughtErrors: 'all',
           caughtErrorsIgnorePattern: '^_',
           destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
           ignoreRestSiblings: true,
         },
       ],

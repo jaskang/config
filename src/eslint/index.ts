@@ -8,6 +8,7 @@ import perfectionist from './perfectionist'
 import { GLOB_EXCLUDE } from '../globs'
 import prettierRecommended from 'eslint-plugin-prettier/recommended'
 import javascript from './javascript'
+import imports from './imports'
 
 export function eslint(
   options: {
@@ -17,7 +18,7 @@ export function eslint(
   ...userConfigs: ConfigWithExtends[]
 ) {
   const { vue: vueOptions, react: reactOptions } = options
-  const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, javascript()]
+  const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, javascript(), imports()]
   if (vueOptions) {
     configs.push(vue())
   } else if (reactOptions) {
