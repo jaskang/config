@@ -13,13 +13,9 @@ export default function perfectionist(): ConfigWithExtends {
         'error',
         {
           groups: [
-            'type',
-            ['internal-type', 'parent-type', 'sibling-type', 'index-type'],
-
-            'builtin',
-            'vue',
-            'react',
-            'external',
+            'type-import',
+            ['builtin'],
+            ['vue', 'react', 'external'],
             'internal',
             ['parent', 'sibling', 'index'],
             'style',
@@ -28,11 +24,17 @@ export default function perfectionist(): ConfigWithExtends {
             // 'side-effect-style',
             'unknown',
           ],
-          customGroups: {
-            value: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
-            type: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
-          },
-          internalPattern: ['^[~@#]/.*'],
+          customGroups: [
+            {
+              groupName: 'react',
+              elementNamePattern: ['^react$', '^react-.+'],
+            },
+            {
+              groupName: 'vue',
+              elementNamePattern: ['^vue$', '^vue-.+'],
+            },
+          ],
+          internalPattern: ['^@/.+', '^#/.+', '^~/.+'],
           type: 'natural',
           order: 'asc',
           newlinesBetween: 'ignore',
