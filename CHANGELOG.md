@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.5.3
+
+### Patch Changes
+
+- [`58c32ab`](https://github.com/jaskang/config/commit/58c32ab51fcc40169c321ebc05ffdbbd3e3fa92e) Thanks [@jaskang](https://github.com/jaskang)! - type import
+
 ## 2.5.2
 
 ### Patch Changes
