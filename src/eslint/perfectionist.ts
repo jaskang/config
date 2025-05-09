@@ -32,7 +32,7 @@ export default function perfectionist(): ConfigWithExtends {
             value: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
             type: { react: ['react', 'react-*'], vue: ['vue', 'vue-*'] },
           },
-          internalPattern: ['@/**', '#/**', '~/**'],
+          internalPattern: ['^[~@#]/.*'],
           type: 'natural',
           order: 'asc',
           newlinesBetween: 'ignore',
