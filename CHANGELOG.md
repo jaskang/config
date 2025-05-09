@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.5.1
+
+### Patch Changes
+
+- [`32b9fe9`](https://github.com/jaskang/config/commit/32b9fe90973f6c1a7b52e56b58a8ff22eaed9ac8) Thanks [@jaskang](https://github.com/jaskang)! - fix import default
+
 ## 2.5.0
 
 ### Minor Changes
