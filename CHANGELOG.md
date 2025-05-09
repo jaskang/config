@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.5.0
+
+### Minor Changes
+
+- [`72a23b5`](https://github.com/jaskang/config/commit/72a23b5ee132aaf49d580adc2eba4fac5411d7f7) Thanks [@jaskang](https://github.com/jaskang)! - 新增 import lint
+
 ## 2.4.1
 
 ### Patch Changes
