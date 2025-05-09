@@ -13,7 +13,6 @@ export default function perfectionist(): ConfigWithExtends {
         'error',
         {
           groups: [
-            'type-import',
             ['builtin'],
             ['vue', 'react', 'external'],
             'internal',
