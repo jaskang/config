@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.4.1
+
+### Patch Changes
+
+- [`03286a0`](https://github.com/jaskang/config/commit/03286a00d8b431e09f3b7a6ef5ab58fc9a133f9f) Thanks [@jaskang](https://github.com/jaskang)! - 修复 import sort
+
 ## 2.4.0
 
 ### Minor Changes
