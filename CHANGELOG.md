@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.5.2
+
+### Patch Changes
+
+- [`407408c`](https://github.com/jaskang/config/commit/407408cdd6d5200ae8c39da96cd0743f42bcdaf9) Thanks [@jaskang](https://github.com/jaskang)! - fix sort import group
+
 ## 2.5.1
 
 ### Patch Changes
