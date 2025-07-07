@@ -1,24 +1,23 @@
-import tslint, { type ConfigWithExtends } from 'typescript-eslint'
 import vuePlugin from 'eslint-plugin-vue'
-import typescriptEslint from 'typescript-eslint'
+import { GLOB_VUE } from '../globs'
+import typescriptEslint, { type ConfigWithExtends } from 'typescript-eslint'
 
-export default function vue(): ConfigWithExtends {
-  return {
-    extends: [vuePlugin.configs['flat/essential']],
-    files: ['**/*.vue'],
-    languageOptions: {
-      parserOptions: {
-        ecmaVersion: 'latest',
-        extraFileExtensions: ['.vue'],
-        sourceType: 'module',
-        parser: typescriptEslint.parser,
+export default function vue(): ConfigWithExtends[] {
+  return [
+    {
+      files: [GLOB_VUE],
+      extends: [vuePlugin.configs['flat/essential']],
+      languageOptions: {
+        parserOptions: {
+          ecmaVersion: 'latest',
+          extraFileExtensions: ['.vue'],
+          sourceType: 'module',
+          parser: typescriptEslint.parser,
+        },
+      },
+      rules: {
+        'vue/multi-word-component-names': 'off',
       },
     },
-    plugins: {
-      vue: vuePlugin,
-    },
-    rules: {
-      'vue/multi-word-component-names': 'off',
-    },
-  }
+  ]
 }
