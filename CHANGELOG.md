@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.0
+
+### Minor Changes
+
+- [`903f658`](https://github.com/jaskang/config/commit/903f658e472228a703e74af5bcb997462dca4983) Thanks [@jaskang](https://github.com/jaskang)! - feat react
+
 ## 2.5.3
 
 ### Patch Changes
