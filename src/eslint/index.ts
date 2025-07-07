@@ -18,12 +18,12 @@ export function eslint(
   ...userConfigs: ConfigWithExtends[]
 ) {
   const { vue: vueOptions, react: reactOptions } = options
-  const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, javascript(), imports()]
+  const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, ...javascript(), ...imports()]
   if (vueOptions) {
-    configs.push(vue())
+    configs.push(...vue())
   } else if (reactOptions) {
-    configs.push(react())
+    configs.push(...react())
   }
-  configs.push(perfectionist(), prettierRecommended, ...userConfigs)
+  configs.push(...perfectionist(), prettierRecommended, ...userConfigs)
   return tseslint.config(configs) as Linter.Config
 }
