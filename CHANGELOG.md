@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.1
+
+### Patch Changes
+
+- [`8dd145d`](https://github.com/jaskang/config/commit/8dd145d47bcb20d6ce989fc170e8b8e01f96ab32) Thanks [@jaskang](https://github.com/jaskang)! - 更新 依赖
+
 ## 2.6.0
 
 ### Minor Changes
