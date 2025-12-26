@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.3
+
+### Patch Changes
+
+- [`805dfe5`](https://github.com/jaskang/config/commit/805dfe5758fc5f9c710ec5814eed616cfb53956b) Thanks [@jaskang](https://github.com/jaskang)! - fix perfectionist sort
+
 ## 2.6.2
 
 ### Patch Changes
