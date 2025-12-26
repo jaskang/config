@@ -19,7 +19,6 @@ export default function perfectionist(): ConfigWithExtends[] {
               'internal',
               ['parent', 'sibling', 'index'],
               'style',
-              'object',
               // 'side-effect',
               // 'side-effect-style',
               'unknown',
