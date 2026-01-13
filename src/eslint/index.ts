@@ -1,6 +1,6 @@
 import gitignore from 'eslint-config-flat-gitignore'
-import tseslint, { type ConfigWithExtends } from 'typescript-eslint'
-import type { Linter } from 'eslint'
+import tseslint, { type ConfigWithExtends, type FlatConfig } from 'typescript-eslint'
+import { type Linter } from 'eslint'
 
 import vue from './vue'
 import react from './react'
@@ -14,16 +14,23 @@ export function eslint(
   options: {
     react?: boolean
     vue?: boolean
+    perfectionist?: boolean
+    prettier?: boolean
   } = {},
   ...userConfigs: ConfigWithExtends[]
 ) {
-  const { vue: vueOptions, react: reactOptions } = options
   const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, ...javascript(), ...imports()]
-  if (vueOptions) {
+  if (options.vue) {
     configs.push(...vue())
-  } else if (reactOptions) {
+  } else if (options.react) {
     configs.push(...react())
   }
-  configs.push(...perfectionist(), prettierRecommended, ...userConfigs)
-  return tseslint.config(configs) as Linter.Config
+  if (options.perfectionist) {
+    configs.push(perfectionist())
+  }
+  if (options.prettier) {
+    configs.push(prettierRecommended)
+  }
+  configs.push(...userConfigs)
+  return configs
 }
