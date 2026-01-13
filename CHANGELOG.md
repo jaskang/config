@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.4
+
+### Patch Changes
+
+- [`6be21e4`](https://github.com/jaskang/config/commit/6be21e45a0814dd2a957b0f08535832c750d65c3) Thanks [@jaskang](https://github.com/jaskang)! - feat 开关
+
 ## 2.6.3
 
 ### Patch Changes
