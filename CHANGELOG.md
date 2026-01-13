@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.8
+
+### Patch Changes
+
+- [`5ae6669`](https://github.com/jaskang/config/commit/5ae66698355144aa6106c2d5eb43bf41802f4d93) Thanks [@jaskang](https://github.com/jaskang)! - fix vue
+
 ## 2.6.7
 
 ### Patch Changes
