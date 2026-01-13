@@ -1,14 +1,13 @@
 import gitignore from 'eslint-config-flat-gitignore'
-import tseslint, { type ConfigWithExtends, type FlatConfig } from 'typescript-eslint'
-import { type Linter } from 'eslint'
+import { type ConfigWithExtends, type FlatConfig } from 'typescript-eslint'
 
-import vue from './vue'
-import react from './react'
-import perfectionist from './perfectionist'
+import { vue } from './vue'
+import { perfectionist } from './perfectionist'
 import { GLOB_EXCLUDE } from '../globs'
 import prettierRecommended from 'eslint-plugin-prettier/recommended'
-import javascript from './javascript'
-import imports from './imports'
+import { javascript } from './javascript'
+import { imports } from './imports'
+import type { Config } from 'eslint/config'
 
 export function eslint(
   options: {
@@ -17,16 +16,14 @@ export function eslint(
     perfectionist?: boolean
     prettier?: boolean
   } = {},
-  ...userConfigs: ConfigWithExtends[]
+  ...userConfigs: Config[]
 ) {
-  const configs: ConfigWithExtends[] = [gitignore(), { ignores: GLOB_EXCLUDE }, ...javascript(), ...imports()]
+  const configs: Config[] = [gitignore(), { ignores: GLOB_EXCLUDE }, ...javascript, imports]
   if (options.vue) {
-    configs.push(...vue())
-  } else if (options.react) {
-    configs.push(...react())
+    configs.push(...vue)
   }
   if (options.perfectionist) {
-    configs.push(perfectionist())
+    configs.push(...perfectionist)
   }
   if (options.prettier) {
     configs.push(prettierRecommended)
