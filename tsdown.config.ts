@@ -6,7 +6,7 @@ export default defineConfig({
   dts: true,
   format: ['es'],
   cjsDefault: false,
-  target: 'node22',
+  // target: 'node22',
   tsconfig: 'tsconfig.json',
   outExtensions: ctx => {
     return {
