@@ -1,5 +1,12 @@
 ## 2.1.1
 
+## 2.6.7
+
+### Patch Changes
+
+- [`8998d8d`](https://github.com/jaskang/config/commit/8998d8d0ed00cb35dddf8bc8e4b919845dc41e6f) Thanks [@jaskang](https://github.com/jaskang)! - dfasd
+  :wq
+
 ## 2.6.6
 
 ### Patch Changes
