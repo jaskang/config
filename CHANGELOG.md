@@ -1,5 +1,11 @@
 ## 2.1.1
 
+## 2.6.5
+
+### Patch Changes
+
+- [`9bc7be4`](https://github.com/jaskang/config/commit/9bc7be4568c9df13d59cc09f3493e32580d91332) Thanks [@jaskang](https://github.com/jaskang)! - fix build
+
 ## 2.6.4
 
 ### Patch Changes
