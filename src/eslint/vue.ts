@@ -1,11 +1,11 @@
-import { configs } from 'eslint-plugin-vue'
+import * as vuePlugin from 'eslint-plugin-vue'
 import { GLOB_VUE } from '../globs'
 import typescriptEslint, { type ConfigWithExtends } from 'typescript-eslint'
 import { defineConfig } from 'eslint/config'
 
 export const vue = defineConfig({
   files: [GLOB_VUE],
-  extends: [configs['flat/essential']],
+  extends: [vuePlugin.configs['flat/essential']],
   languageOptions: {
     parserOptions: {
       ecmaVersion: 'latest',
